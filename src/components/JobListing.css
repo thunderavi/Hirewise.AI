@@ -1,0 +1,77 @@
+/* src/components/jobListing.css */
+
+.job-listing {
+  padding: 20px;
+  max-width: 600px;
+  margin: auto;
+}
+
+.job-filter-form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+.input-field,
+.resume-upload,
+.submit-button {
+  margin: 10px 0;
+  padding: 10px;
+  font-size: 16px;
+}
+
+.submit-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+  background-color: #0056b3;
+}
+
+.card {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #f9f9f9;
+  padding: 15px;
+  margin-top: 20px;
+}
+
+.card h2 {
+  margin: 0 0 10px 0;
+}
+
+.job-results ul,
+.all-jobs ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.job-results li,
+.all-jobs li {
+  margin: 5px 0;
+}
+/* src/components/jobListing.css */
+.manual-skill-input {
+  margin-top: 20px;
+}
+
+.manual-skill-input input {
+  padding: 5px;
+  margin-right: 10px;
+}
+
+.added-skills {
+  margin-top: 10px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.added-skills ul {
+  list-style-type: none;
+  padding: 0;
+}

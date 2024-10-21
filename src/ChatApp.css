@@ -1,0 +1,55 @@
+.chat-app {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.chat-title {
+  text-align: center;
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.input-form {
+  display: flex;
+  flex-direction: column;
+}
+
+.input-textarea {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+  resize: vertical; /* Allow vertical resizing */
+}
+
+.send-button {
+  padding: 10px;
+  font-size: 16px;
+  color: #fff;
+  background-color: #007bff;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.send-button:hover {
+  background-color: #0056b3;
+}
+
+.response-container {
+  margin-top: 20px;
+}
+
+.ai-response {
+  background-color: #e9ecef;
+  padding: 10px;
+  border-radius: 4px;
+  min-height: 50px; /* Minimum height for the response box */
+  color: #333;
+  white-space: pre-wrap; /* Preserve whitespace for better formatting */
+}
