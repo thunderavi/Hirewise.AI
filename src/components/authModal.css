@@ -1,0 +1,81 @@
+/* src/components/authModal.css */
+
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+}
+
+.modal-content {
+  background: white;
+  padding: 20px;
+  border-radius: 5px;
+  width: 300px;
+  position: relative;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.modal-content .input-group {
+  margin-bottom: 15px;
+}
+
+.modal-content .input-group label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.modal-content .input-group input {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+
+.modal-content .submit-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 100%;
+  /* Removed hover effect */
+}
+
+.modal-content .toggle-link {
+  margin-top: 10px;
+  color: #007bff;
+  cursor: pointer;
+  text-align: center;
+}
+
+.modal-content .close-button {
+  background: transparent;
+  border: none;
+  color: black; /* Set color to black for the close button */
+  cursor: pointer;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 24px; /* Increase size for visibility */
+}
+/* src/components/authModal.css */
+/* ...existing styles... */
+
+.toggle-admin {
+  margin-top: 15px;
+  text-align: center;
+  color: #007bff;
+  cursor: pointer;
+}
+
+.toggle-admin span {
+  margin: 0 10px;
+}

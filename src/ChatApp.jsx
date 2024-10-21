@@ -13,7 +13,7 @@ const ChatApp = () => {
         setAiResponse('Loading...');
 
         // Prepare the message for the AI
-        const prompt = `Based on the following job description, please provide interview preparation tips: ${userInput}`;
+        const prompt = `Based on the following job description, please provide interview preparation tips in sections: ${userInput}`;
 
         try {
             const response = await groq.chat.completions.create({
@@ -21,11 +21,21 @@ const ChatApp = () => {
                 model: 'llama3-8b-8192',
             });
 
-            setAiResponse(response.choices[0]?.message?.content || 'No response');
+            setAiResponse(formatResponse(response.choices[0]?.message?.content || 'No response'));
         } catch (error) {
             console.error('Error:', error);
             setAiResponse('Error fetching response.');
         }
+    };
+
+    // Function to format response into sections
+    const formatResponse = (response) => {
+        const sections = response.split('\n\n'); // Assuming double newlines separate sections
+        return sections.map((section, index) => (
+            <div key={index} className="response-section">
+                <p>{section}</p>
+            </div>
+        ));
     };
 
     return (

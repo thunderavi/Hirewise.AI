@@ -1,77 +1,155 @@
-/* src/components/jobListing.css */
+/* General Styling */
+body {
+  font-family: 'Poppins', sans-serif;
+  background-color: #f4f7fc;
+}
 
 .job-listing {
   padding: 20px;
-  max-width: 600px;
+  max-width: 1000px;
   margin: auto;
+  background-color: #ffffff;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+  font-size: 2.5rem;
+  margin-bottom: 20px;
 }
 
 .job-filter-form {
   display: flex;
   flex-direction: column;
+  align-items: center;
   margin-bottom: 20px;
 }
 
-.input-field,
-.resume-upload,
-.submit-button {
+.resume-upload {
   margin: 10px 0;
   padding: 10px;
   font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  width: 80%;
 }
 
 .submit-button {
   background-color: #007bff;
   color: white;
   border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
   cursor: pointer;
+  font-size: 16px;
   transition: background-color 0.3s;
+  width: 50%;
+  margin-top: 10px;
 }
 
 .submit-button:hover {
   background-color: #0056b3;
 }
 
-.card {
-  border: 1px solid #ccc;
-  border-radius: 5px;
-  background-color: #f9f9f9;
-  padding: 15px;
-  margin-top: 20px;
-}
-
-.card h2 {
-  margin: 0 0 10px 0;
-}
-
-.job-results ul,
-.all-jobs ul {
-  list-style-type: none;
-  padding: 0;
-}
-
-.job-results li,
-.all-jobs li {
-  margin: 5px 0;
-}
-/* src/components/jobListing.css */
+/* Manual Skill Input Styling */
 .manual-skill-input {
+  display: flex;
+  justify-content: center;
   margin-top: 20px;
 }
 
 .manual-skill-input input {
-  padding: 5px;
-  margin-right: 10px;
-}
-
-.added-skills {
-  margin-top: 10px;
   padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 5px;
+  margin-right: 10px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 6px;
 }
 
-.added-skills ul {
-  list-style-type: none;
-  padding: 0;
+.manual-skill-input button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.manual-skill-input button:hover {
+  background-color: #218838;
+}
+
+/* Job Listings and Cards Styling */
+.job-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.job-results {
+  flex: 2;
+  margin-right: 20px;
+}
+
+.small-box {
+  flex: 1;
+  background-color: #f8f9fa;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+.job-cards {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+}
+
+.card {
+  border: 1px solid #e0e0e0;
+  border-radius: 10px;
+  padding: 20px;
+  background-color: white;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+}
+
+.card h3 {
+  margin-top: 0;
+  color: #333;
+}
+
+.apply-button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.apply-button:hover {
+  background-color: #218838;
+}
+
+/* Scrollbar styling for All Jobs Box */
+.small-box::-webkit-scrollbar {
+  width: 8px;
+}
+
+.small-box::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 4px;
 }

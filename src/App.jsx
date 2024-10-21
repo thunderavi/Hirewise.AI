@@ -5,8 +5,8 @@ import NavBar from './components/NavBar';
 import LandingPage from './LandingPage';
 import ChatApp from './ChatApp';
 import JobListing from './components/JobListing';
-import JobFitChecker from './components/JobFitChecker'; // Import your JobFitChecker
-import HelperBot from './components/HelperBot'; // Import the HelperBot component
+import JobFitChecker from './components/JobFitChecker';
+import HelperBot from './components/HelperBot';
 import './App.css'; // Optional: Import any global CSS
 
 const App = () => {
